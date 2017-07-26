@@ -39,7 +39,7 @@ public class FXMLDocumentController implements Initializable {
             String isbn = webv.getEngine().getDocument().getElementsByTagName("div")
                     .item(16).getChildNodes()
                     .item(3).getTextContent();
-            txtisbn.setText(isbn);
+            txtisbn.setText(isbn.replaceAll(" ",""));
         }catch(Exception e){
             System.out.println(""+e);
         }//fim
@@ -55,7 +55,7 @@ public class FXMLDocumentController implements Initializable {
             String edicao = webv.getEngine().getDocument().getElementsByTagName("div")
                     .item(18).getChildNodes()
                     .item(3).getTextContent();
-            txtedicao.setText(edicao);
+            txtedicao.setText(edicao.replaceAll(" ",""));
         }catch(Exception e){
             System.out.println(""+e);
         }//fim
@@ -63,7 +63,7 @@ public class FXMLDocumentController implements Initializable {
             String ano = webv.getEngine().getDocument().getElementsByTagName("div")
                     .item(19).getChildNodes()
                     .item(3).getTextContent();
-            txtanoedicao.setText(ano);
+            txtanoedicao.setText(ano.replaceAll(" ",""));
         }catch(Exception e){
             System.out.println(""+e);
         }//fim
@@ -71,7 +71,7 @@ public class FXMLDocumentController implements Initializable {
             String suporte = webv.getEngine().getDocument().getElementsByTagName("div")
                     .item(20).getChildNodes()
                     .item(3).getTextContent();
-            txtsuporte.setText(suporte);
+            txtsuporte.setText(suporte.replaceAll(" ",""));
         }catch(Exception e){
             System.out.println(""+e);
         }//fim
@@ -79,7 +79,7 @@ public class FXMLDocumentController implements Initializable {
             String pagina = webv.getEngine().getDocument().getElementsByTagName("div")
                     .item(21).getChildNodes()
                     .item(3).getTextContent();
-            txtpaginas.setText(pagina);
+            txtpaginas.setText(pagina.replaceAll(" ",""));
         }catch(Exception e){
             System.out.println(""+e);
         }//fim
@@ -87,7 +87,7 @@ public class FXMLDocumentController implements Initializable {
             String editora = webv.getEngine().getDocument().getElementsByTagName("div")
                     .item(22).getChildNodes()
                     .item(3).getTextContent();
-            txteditora.setText(editora);
+            txteditora.setText(editora.replaceAll(" ",""));
         }catch(Exception e){
             System.out.println(""+e);
         }//fim
@@ -95,7 +95,7 @@ public class FXMLDocumentController implements Initializable {
             String autores = webv.getEngine().getDocument().getElementsByTagName("div")
                     .item(23).getChildNodes()
                     .item(3).getTextContent();
-            txtautores.setText(autores);
+            txtautores.setText(autores.replaceAll(" ",""));
         }catch(Exception e){
             System.out.println(""+e);
         }//fim
