@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.web.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="702.0" prefWidth="841.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="catalogo.FXMLDocumentController">
+  <children>
+    <Label fx:id="label" layoutX="126.0" layoutY="120.0" minHeight="16.0" minWidth="69.0" />
+    <TabPane layoutX="0.0" layoutY="0.0" prefHeight="702.0" prefWidth="841.0" tabClosingPolicy="UNAVAILABLE">
+      <tabs>
+        <Tab id="tab1" text="Site">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <Button id="button" layoutX="765.0" layoutY="636.0" onAction="#handleButtonAction" text="Buscar" />
+                <WebView fx:id="webv" layoutX="7.0" layoutY="14.0" prefHeight="613.0" prefWidth="827.0" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab id="tab2" text="Cadastro">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <TextField id="isbn" fx:id="txtisbn" layoutX="31.0" layoutY="51.0" prefWidth="351.0" />
+                <TextField fx:id="txttitulo" layoutX="32.0" layoutY="107.0" prefWidth="427.0" />
+                <TextField fx:id="txtedicao" layoutX="32.0" layoutY="162.0" prefWidth="200.0" />
+                <TextField fx:id="txtanoedicao" layoutX="247.0" layoutY="160.0" prefWidth="200.0" />
+                <TextField fx:id="txtsuporte" layoutX="459.0" layoutY="160.0" prefWidth="200.0" />
+                <TextField fx:id="txtpaginas" layoutX="33.0" layoutY="225.0" prefWidth="200.0" />
+                <TextField fx:id="txteditora" layoutX="247.0" layoutY="225.0" prefWidth="412.0" />
+                <TextArea fx:id="txtautores" layoutX="33.0" layoutY="298.0" prefWidth="449.0" wrapText="true" />
+                <Label layoutX="31.0" layoutY="28.0" text="ISBN:" />
+                <Label layoutX="32.0" layoutY="81.0" text="Titulo:" />
+                <Label layoutX="33.0" layoutY="140.0" text="Edição:" />
+                <Label layoutX="247.0" layoutY="137.0" text="Ano Edição:" />
+                <Label layoutX="459.0" layoutY="134.0" text="Tipo de Suporte:" />
+                <Label layoutX="35.0" layoutY="202.0" text="Paginas" />
+                <Label layoutX="247.0" layoutY="205.0" text="Editora:" />
+                <Label layoutX="33.0" layoutY="273.0" text="Autores:" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+  </children>
+</AnchorPane>
