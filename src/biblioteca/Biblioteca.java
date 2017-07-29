@@ -1,6 +1,3 @@
-/*
-Mw3st::8::
- */
 package biblioteca;
 
 import telas.cadastro;
