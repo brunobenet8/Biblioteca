@@ -1,0 +1,12 @@
+private void handleButtonAction(ActionEvent event) {
+        try{
+        Parent root = FXMLLoader.load(getClass().getResource("tela2.fxml"));
+        Scene dialog = new Scene(root);
+        Stage stage2 = new Stage();
+        stage2.setScene(dialog);
+        stage2.show();
+        
+        }catch(Exception e){
+            System.out.println(""+e);
+        }
+    }
